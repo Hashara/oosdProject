@@ -63,7 +63,7 @@ class Visitor extends Controller{
       //dnd();
       $visitor->updateinfo($visitor->id,$posted_values);
       $this->view->visitor=$visitor;
-      Router::redirect('');
+      Router::redirect('visitor/visitordone');
       }
      
      
@@ -78,5 +78,9 @@ class Visitor extends Controller{
       $this->view->id=$id;
       $this->view->list=$list;
       $this->view->render('visitor/visitorCounselor');
+    }
+
+    public function visitordoneAction(){
+      $this->view->render('visitor/visitordone');
     }
 }
