@@ -33,12 +33,14 @@
 
        <legend ><b>Edit</b></legend>
 
-       <p>  <button class="btn btn-primary" style="border-radius: 10px;">
-           <a href="<?=PROOT?>studentregister/editProfile/<?=$this->student->studentId?>">Edit Profile</a></button></p>
+       <!-- <p>  <button class="btn btn-primary" style="border-radius: 10px;">
+           <a href="">Edit Profile</a></button></p>
 
     <p>  <button class="btn btn-primary" style="border-radius: 10px;">
-        <a href="<?=PROOT?>studentregister/editPassword/<?=$this->student->studentId?>">Change Password</a></button></p>
-
+        <a href="?=PROOT?>studentregister/editPassword/<?=$this->student->studentId?>">Change Password</a></button></p> -->
+        <a class="btn btn-primary" style="margin-left: 10px;" href ="<?=PROOT?>studentregister/editPassword/<?=$this->student->studentId?>">Change Password</a>
+    <p><br></p>
+    <a class="btn btn-primary" style="margin-left: 10px;" href = '<?=PROOT?>studentregister/editProfile/<?=$this->student->studentId?>'>Edit Profile</a>
 
      </div>
      </center>
